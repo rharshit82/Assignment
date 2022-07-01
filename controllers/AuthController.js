@@ -3,11 +3,7 @@ const User = require("../models/UserModel.js");
 const generateToken = require("../util/generateToken.js");
 
 exports.registerController = async (req, res) => {
-  console.log("helo");
-  console.log(req.body);
-
   const { name, email, password, phone, address, country, BVN } = req.body;
-  console.log(req.body);
   const user = await User.findOne({ email });
   if (user) {
     return res.status(401).json({ message: "User already exists" });
