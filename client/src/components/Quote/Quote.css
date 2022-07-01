@@ -1,0 +1,8 @@
+.quote{
+    background-image: url("./background.jfif");
+    box-shadow:inset 0 0 0 1000px rgb(0 108 224 / 72%);
+
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
